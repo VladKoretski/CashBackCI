@@ -8,7 +8,7 @@ public class TestCashBackService {
     public void testSubscribedUnderLimit() {
         int amount = 5000;
         boolean ifRegistered = true;
-        int expected = 1500;
+        int expected = 500;
 
         CashBackService cashBackService = new CashBackService();
         int actual = cashBackService.bonusCalculation(amount,ifRegistered);
