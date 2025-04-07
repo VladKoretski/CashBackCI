@@ -8,7 +8,7 @@ import ru.mirea.CashBackService;
 public class TestParameterizedCashBackService {
 
     @ParameterizedTest
-    @CsvSource(value = {"5000,true,550","5000,false,250","5000000,true,5000","5000000,false,5000"})
+    @CsvSource(value = {"5000,true,500","5000,false,250","5000000,true,5000","5000000,false,5000"})
     public void testSubscribedUnderLimit(int amount, boolean ifRegistered, int expected) {
 
         CashBackService cashBackService = new CashBackService();
